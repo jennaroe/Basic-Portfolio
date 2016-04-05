@@ -41,7 +41,7 @@ a:link{
     text-decoration: none;
 } 
 
-#main-bio {
+#contact {
     border: solid;
     border-width: 1px;
     border-color: #dddddd;
@@ -53,6 +53,42 @@ a:link{
     padding: 30px;
     float: left;
 }
+h5{
+	color: #777777;
+	padding: 0px;
+	margin:3px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 10px 20px 10px 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 10px 20px 10px 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type=message] {
+    width: 100%;
+    padding: 100px 20px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+	background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 12px 36px;
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
 
 #title {
     color: #4aaaa5;
@@ -60,13 +96,6 @@ a:link{
     border-bottom-style:solid;
     border-width: 3px;
     border-bottom-color: #dddddd;
-}
-
-.bio-image{
-    float:left;
-    margin-right: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px
 }
 
 .connect-box{
@@ -84,6 +113,12 @@ a:link{
     font-family: 'Georgia', Times, Times New Roman, serif;
     float: right;
 }
+h3{
+
+	border-bottom-style: solid;
+    border-width: 3px;
+    border-bottom-color: #dddddd;
+}
 ul{
     list-style-type: none;
     margin: 0;
@@ -93,16 +128,8 @@ ul{
 
 li{
     display: inline-block;
-    }
-h3{
-
-    border-bottom-style: solid;
-    border-width: 3px;
-    border-bottom-color: #dddddd;
-    margin-bottom: 10px;
-
+    
 }
-
 footer{
     background: #666666;
     font-size: 15px;
