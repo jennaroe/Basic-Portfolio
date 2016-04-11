@@ -6,8 +6,8 @@ body {
 header {
     background: #4aaaa5;
     border:3px #cccccc;
-    padding: 43.5px;
-    margin-top: 25px;
+    padding: 3.05%;
+    margin-top: 1.7%;
     margin-left: 6.5%;
     color: #ffffff;
     position: absolute;
@@ -27,10 +27,10 @@ h1{
 }
 
 #nav-bar {
-    font-color: #777777;
+    color: #777777;
     background-color: #ffffff;
     text-align: right;
-    padding: 56px;
+    padding: 3.9%;
     border-bottom-style: solid;
     border-width: 3px;
     border-bottom-color: #dddddd;
@@ -46,12 +46,12 @@ a:link{
     text-decoration: none;
 } 
 
-#porfolio {
+#portfolio {
     border: solid;
     border-width: 1px;
     border-color: #dddddd;
     background: #ffffff;
-    width: 650px;
+    width: 46%;
     margin-left:6.5%;
     margin-top:5%;
     margin-bottom: 5%;
@@ -76,10 +76,11 @@ a:link{
 }
 .placeholder li{
     position: relative;
-    margin-right: 22px;
-    margin-top: 20px;
+    margin-right: 3.5%;
+    margin-top: 3.5%;
     margin-left: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 2.5%;
+    align-items: center;
 }
 
 .placeholder h2{
@@ -102,34 +103,33 @@ a:link{
     border-width: 1px;
     border-color: #dddddd;
     background: #ffffff;
-    width:270px;
-    height: 175px;
-    padding:30px;
+    width:19%;
+    height: 18.5%;
+    padding:2%;
     margin-top:5%;
     margin-right:15%;
     align-items: center;
+    text-align: center;
     color: #4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;
     float: right;
 }
 .connect-box ul{
     list-style-type: none;
-    margin: 10px;
-    padding: 8px;
-
+    margin: auto;
+    padding: 3%;
 }
 
 li{
     display: inline-block;
     }
 h3{
-
     border-bottom-style: solid;
     border-width: 3px;
     border-bottom-color: #dddddd;
-    margin-bottom: 10px;
+    margin-bottom: 4.5%;
     font-size: 24px;
-    padding: 20px;
+    padding: 4.5%;
     font-weight: bold;
 }
 
@@ -140,9 +140,111 @@ footer{
     border-top-style: solid;
     border-width: 7px;
     border-color: #4aaaa5;
-    width: 100%;
-    height: 85px;
-    padding-top: 2%;
+    padding: 2.5%;
     text-align: center;
     clear:left;
+    }
+    /* For desktop: */
+@media screen and (max-width: 980px)
+    and (min-width: 769px) {
+    
+    .placeholder li{
+        height:100%;
+        width:100%;
+        margin:5%;
+        }
+    .placeholder h2{
+        width: 81.2%;
+    }
+    .connect-box{
+        width:20%;
+        height:10%;
+        }
+    li img{
+        width: 90%;
+        height: 90%;
+        }
+    li{
+        width:30%;
+        }
+    h3{
+        font-size:20px;
+        }
+    }
+    /* For Tablet: */
+@media screen and (max-width: 768px)
+    and (min-width: 641px)
+    {
+    header{
+        margin: 0px 3%;
+    }
+    #nav-bar{
+        margin-top: 0%;
+        padding:3% 3% 3%;
+        padding-right: 0px;
+    }
+    #portfolio{
+        width:auto;
+        height: auto;
+        margin: 3%;
+        float:none;
+        }
+
+    .connect-box{
+        float: none;
+        width: auto;
+        height:auto;
+        margin: 5% 3% 5% 3%;
+        }
+    }
+    /* For Phone: */
+@media screen and (max-width: 640px){
+     header{
+        float:right;
+        width: 100%;
+        height:auto;
+        position: static;
+        text-align: center;
+        margin:0px;
+        padding-top: 5%;
+        padding-right: 0px;
+        }
+    nav{
+        text-align: center;
+        padding-right: 0px;
+        }
+    #nav-bar{
+        padding-top: 15%;
+        padding-bottom: 4%;
+        }
+    nav a:link{
+        color: #777777;
+        text-decoration: none;
+        padding:10%;
+        }
+    #portfolio{
+        width:auto;
+        height: auto;
+        margin: 3%;
+        float:none;
+        }
+     .placeholder li{
+        height:100%;
+        width:100%;
+        margin:5%;
+        }
+    .placeholder h2{
+        width: 82.6%;
+    }
+    .connect-box{
+        float: none;
+        width: auto;
+        height:auto;
+        margin: 3%;
+        }
+    .placeholder li img{
+        width: 90%;
+        height: 90%;
+        }
+    }   
 }

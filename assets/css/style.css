@@ -6,8 +6,8 @@ body {
 header {
     background: #4aaaa5;
     border:3px #cccccc;
-    padding: 43.5px;
-    margin-top: 25px;
+    padding: 3.05%;
+    margin-top: 1.7%;
     margin-left: 6.5%;
     color: #ffffff;
     position: absolute;
@@ -30,7 +30,7 @@ h1{
     color: #777777;
     background-color: #ffffff;
     text-align: right;
-    padding: 56px;
+    padding: 3.9%;
     border-bottom-style: solid;
     border-width: 3px;
     border-bottom-color: #dddddd;
@@ -51,12 +51,13 @@ a:link{
     border-width: 1px;
     border-color: #dddddd;
     background: #ffffff;
-    width: 650px;
+    width: 45%;
     margin-left:6.5%;
     margin-top:5%;
     margin-bottom: 5%;
-    padding: 30px;
+    padding: 3%;
     float: left;
+    overflow: auto;
 }
 
 p{
@@ -85,36 +86,38 @@ p{
     border-width: 1px;
     border-color: #dddddd;
     background: #ffffff;
-    width:270px;
-    height: 175px;
-    padding:30px;
+    width:19%;
+    height: 18.5%;
+    padding:2%;
     margin-top:5%;
     margin-right:15%;
     align-items: center;
+    text-align: center;
     color: #4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;
     float: right;
 }
 .connect-box ul{
     list-style-type: none;
-    margin: 10px;
-    padding: 8px;
-
+    margin: auto;
+    padding: 3%;
+    }
+li img{
+    height: 75px;
+    width:75px;
 }
-
 li{
     display: inline-block;
     }
 h3{
-
     border-bottom-style: solid;
     border-width: 3px;
     border-bottom-color: #dddddd;
-    margin-bottom: 10px;
+    margin-bottom: 4.5%;
     font-size: 24px;
-    padding: 20px;
+    padding: 4.5%;
     font-weight: bold;
-}
+    }
 
 footer{
     background: #666666;
@@ -123,9 +126,118 @@ footer{
     border-top-style: solid;
     border-width: 7px;
     border-color: #4aaaa5;
-    width: 100%;
-    height: 85px;
-    padding-top: 2%;
+    padding: 2.5%;
     text-align: center;
     clear:left;
+    }
+/* For desktop: */
+@media screen and (max-width: 980px)
+    and (min-width: 769px)
+    {
+    .bio-image{
+        height:auto;
+        width:90%;
+        margin:5%;
+        }
+    .connect-box{
+        width:20%;
+        height:10%;
+        }
+    li img{
+        width: 100%;
+        height: 100%;
+        }
+    li{
+        width:30%;
+        }
+    h3{
+        font-size:20px;
+        }
+    }
+/* For Tablet: */
+@media screen and (max-width: 768px)
+    and (min-width: 641px)
+    {
+    header{
+        margin: 0px 3%;
+    }
+    #nav-bar{
+        margin-top: 0%;
+        padding:3% 3% 3%;
+        padding-right: 0px;
+    }
+    #main-bio{
+        width:auto;
+        height: auto;
+        margin: 3%;
+        float:none;
+        }
+    .bio-image{
+        float:left;
+        width: 65%;
+        height:auto;
+        padding-right:1%;
+        margin:1%;
+        }
+    p{
+        margin-left:0px;
+        width: 100%;
+        }
+    .connect-box{
+        float: none;
+        width: auto;
+        height:auto;
+        margin: 5% 3% 5% 3%;
+        }
+    }
+/* For Phone: */
+@media screen and (max-width: 640px)
+    and (min-width: 100px){
+    
+    header{
+        float:right;
+        width: 100%;
+        height:auto;
+        position: static;
+        text-align: center;
+        margin:0px;
+        padding-top: 5%;
+        padding-right: 0px;
+        }
+    nav{
+        text-align: center;
+        padding-right: 0px;
+        }
+    #nav-bar{
+        padding-top: 15%;
+        padding-bottom: 4%;
+        }
+    a:link{
+        color: #777777;
+        text-decoration: none;
+        padding:10%;
+        }
+    #main-bio{
+        width:auto;
+        height: auto;
+        margin: 3%;
+        float:none;
+        }
+    .bio-image{
+        height:auto;
+        width:90%;
+        margin:5%;
+        }
+    p{
+        margin-left:1%;
+        width: 100%;
+        }
+    .connect-box{
+        float: none;
+        width: auto;
+        height:auto;
+        margin: 3%;
+        }
+    }
+
 }
